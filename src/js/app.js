@@ -53,6 +53,27 @@ if (mq.matches) {
 
 
 
+const nextButton = document.getElementById('timeline-arrow-next')
+const prevButton = document.getElementById('timeline-arrow-prev')
+
+nextButton.addEventListener("click", () => {
+    scrollWrapper.scrollBy({
+        left: 240,
+        behavior: 'smooth'
+    })
+});
+
+prevButton.addEventListener("click", () => {
+    scrollWrapper.scrollBy({
+        left: -240,
+        behavior: 'smooth'
+    })
+});
+
+// prevButton.addEventListener("click", () {
+//     scrollWrapper.scrollBy(-240, 0)
+// });
+
 
 
 
